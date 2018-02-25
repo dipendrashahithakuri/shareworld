@@ -1,0 +1,45 @@
+$main-black: black;  
+$footer-height: 45px; 
+
+$primary-font: 'Open Sans', sans-serif;  
+$secondary-font: 'Dosis', sans-serif;  
+
+.navbar{
+  font-family: $secondary-font;
+  background-color:#000000;
+}
+
+.navbar .navbar-brand,a {
+  font-family: 'Satisfy', cursive;
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #dedcee;
+  font-family: $primary-font;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto $footer-height;
+  /* Pad bottom by footer height */
+  padding: 0 0 $footer-height;
+}
+
+/* Set the fixed height of the footer here */
+.footer {
+  height: $footer-height; 
+  background-color: #c4c1ba;
+  color: black;;
+  position: absolute; bottom: 0px;
+  width: 100%;
+  padding-top: 10px;
+}
